@@ -483,4 +483,4 @@ function decodeMs(num) {
 
 
 
-bot.login("ODg0NTYxNjI3NzAwMTQ2MjI2.YTaSNg.CT8hi3PEr8ENDIeGUS6vJZyIA6M");
+bot.login(tu token aqui xd);
