@@ -34,6 +34,14 @@ module.exports = {
     return new Intl.DateTimeFormat('en-US').format(date);
   },
 
+  formatDate2: function (date) {
+    let year = date.getFullYear();
+    let month = (1 + date.getMonth()).toString().padStart(2, '0');
+    let day = date.getDate().toString().padStart(2, '0');
+
+    return day + '/' + month + '/' + year;
+},
+
   promptMessage: async function (message, author, time, validReactions) {
     time *= 1000;
 
@@ -170,5 +178,5 @@ module.exports = {
 			}
 			return resolve(lines);
 		});
-	}
+  },
 }
